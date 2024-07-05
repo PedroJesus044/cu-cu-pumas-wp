@@ -22,5 +22,6 @@ RUN chgrp -R 0 . && \
 # the approriate places.
 # This can obviously be done differently, and in that case, the final CMD
 # should be set to "CMD httpd -D FOREGROUND" instead.
+ENV TRACK_ERRORS=ON
 EXPOSE 8080
 CMD /usr/libexec/s2i/run
